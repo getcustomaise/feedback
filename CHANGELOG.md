@@ -5,7 +5,7 @@ All notable changes to the Customaise Chrome extension are documented here.
 ## [1.1.7] - Upcoming
 
 ### Added
-- MCP Server for AI coding agents. Connect Cursor, Claude Code, Windsurf, Antigravity, or any MCP-compatible IDE to Customaise via `npx -y @customaise/mcp`. 12 tools for script management, browser context, and automation. Power User plan required.
+- MCP Server for AI coding agents. Connect Cursor, Claude Code, Windsurf, Kiro, Antigravity, or any MCP-compatible IDE to Customaise via `npx -y @customaise/mcp`. 13 tools for script management, visual DOM targeting, browser context, screenshots with element highlighting, and automation. Power User plan required.
 
 ---
 
