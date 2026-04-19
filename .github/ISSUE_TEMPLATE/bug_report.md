@@ -11,7 +11,7 @@ A clear description of what the bug is.
 
 **Environment**
 - Chrome version: [e.g. 134]
-- Customaise version: [e.g. 0.6.x — check in extension settings]
+- Customaise version: [e.g. 1.2.0, check in extension Settings]
 - OS: [e.g. macOS 15, Windows 11]
 
 **Steps to reproduce**
