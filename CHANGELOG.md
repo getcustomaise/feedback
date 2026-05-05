@@ -2,6 +2,14 @@
 
 All notable changes to the Customaise Chrome extension are documented here.
 
+## [1.2.3] - May 2026
+
+### Added
+- **MCP Bridge is now free** for any signed-in Customaise user. 50 calls per day, 150 per week. Power User unlocks unlimited.
+- **Marketplace Phase 1+2.** Browse the curated AgentScript catalogue and install community scripts directly from customaise.com. Publishers get a portal to ship their own.
+
+---
+
 ## [1.2.0] - April 2026
 
 ### Added
