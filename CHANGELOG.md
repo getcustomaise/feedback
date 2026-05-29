@@ -2,6 +2,46 @@
 
 All notable changes to the Customaise Chrome extension are documented here.
 
+## [1.2.7] - May 2026
+
+### Added
+- **On-device AI in Chat.** Pick Gemini Nano in the Chat model selector to run prompts locally on your machine. Free, private, no API key. Best for short questions and lightweight tool calls; longer planning still uses cloud models. Requires Chrome 148+ on desktop.
+- **`@grant CM_promptAI` for scripts.** UserScripts and AgentScripts can call on-device AI directly. Declare `@grant CM_promptAI` and call `await CM_promptAI(prompt, opts?)` from your code. Pass a JSON schema for structured output. Script input stays on the user's machine.
+
+### Improved
+- The in-browser AI Chat that builds scripts now reaches for the right Customaise grant (on-device AI, Chrome DevTools, bulletproof selectors) when your description fits one.
+
+---
+
+## [1.2.6] - May 2026
+
+### Added
+- **Full-page and any-tab screenshots.** Capture a whole scrollable page in one image, or screenshot any open tab without changing focus.
+- **Chrome DevTools Access.** An opt-in control under Settings → Scripts that lets a script use Chrome DevTools on the pages it matches. Off by default, resets every Chrome restart, and a single switch turns it off for every script at once. Chrome shows its standard yellow banner while a session is active and clears when it ends.
+
+### Improved
+- AI agents open new tabs in the background while building scripts, so your current tab keeps focus.
+- Script Management opens faster.
+
+### Fixed
+- Scripts that contain regular expressions now save correctly. Editor error markers point to the exact line.
+
+---
+
+## [1.2.5] - May 2026
+
+### Fixed
+- Minor stability and UI fixes.
+
+---
+
+## [1.2.4] - May 2026
+
+### Fixed
+- Minor stability fixes.
+
+---
+
 ## [1.2.3] - May 2026
 
 ### Added
