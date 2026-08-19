@@ -2,6 +2,33 @@
 
 All notable changes to the Customaise Chrome extension are documented here.
 
+## [1.2.9] - August 2026
+
+### Added
+- **Local models.** Run a model on your own hardware and pick it in the Chat model picker, beside the cloud ones. Point Customaise at llama.cpp, Ollama, LM Studio or vLLM, over localhost or a Tailscale name if the machine is somewhere else. Your prompts go straight from the browser to your server and draw no tokens, because the request never reaches us to be counted. Power User; add a server under Settings → Local Models.
+- **Bring an OpenRouter key.** BYOK is no longer Google-only. Save an OpenRouter key on your Account page and pick any model it serves from the model picker. You can hold both keys at once, and each model runs on its own provider's key.
+
+### Improved
+- **The Browser Agent drives pages with real browser input.** Clicks, typing, drags and keyboard shortcuts arrive as the genuine article rather than synthetic events, so canvas apps and sites that ignore scripted events now work. Double-click and right-click do what their names say, and an action that cannot be carried out says so instead of reporting success.
+
+### Fixed
+- **The Browser Agent is withheld, with the reason shown, when your only key is OpenRouter.** It is built on Gemini Computer Use, which exists only on Google's own models, so connecting a Google AI Studio key alongside brings it back.
+
+---
+
+## [1.2.8] - June 2026
+
+### Added
+- **A live status strip for MCP and sync.** Your MCP bridge and cross-device sync at a glance, so you can tell at once whether your AI agent is connected and your scripts are syncing.
+
+### Improved
+- **Two interface touch-ups.** Click the toolbar icon on a page where scripts cannot run (a `chrome://` or Web Store page) and you now get a panel explaining why, instead of nothing happening. Chat offers a one-step card to connect your IDE agent over MCP.
+
+### Fixed
+- **On-device AI (`CM_promptAI`) streaming is steadier.** Long replies stream all the way to the end without being cut short, and chunks no longer arrive duplicated.
+
+---
+
 ## [1.2.7] - May 2026
 
 ### Added
