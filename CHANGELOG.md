@@ -2,6 +2,69 @@
 
 All notable changes to the Customaise Chrome extension are documented here.
 
+## [1.3.4] - Upcoming, September 2026
+
+Chrome Web Store rollout pending. Version 1.3.3 is the current store release.
+
+### Fixed
+- More reliable script saving and sync, including after browser restarts.
+- Approval prompts close correctly when an AI action is cancelled.
+
+### Improved
+- Clearer explanations and recovery options when an item cannot sync.
+- Recover interrupted script changes inside Settings → Scripts. Cross-device sync now has one on/off control.
+- For external AI agents, use the matching Customaise MCP server **3.2.3** for the complete save-progress and recovery flow. Restart your MCP clients after updating.
+
+---
+
+## [1.3.3] - September 2026
+
+### Fixed
+- Minor bug fixes and refinements.
+
+---
+
+## [1.3.2] - September 2026
+
+### Added
+- **Your Devices.** See browsers signed in to your account and mark those operated by an AI agent. Approval prompts can be routed to another browser, with local approval controls disabled. This does not isolate an agent with access to your account credentials or the whole computer.
+- **Isolated approval controls.** Consent prompts run in an extension-owned frame, separate from the underlying page.
+- Settings shows when the MCP server needs an update.
+
+### Improved
+- More reliable bridge connections when switching editors or using several at once, with progress while an approval is pending.
+- Reinstalling preserves device identity. Settings explains when sync is enabled for your account but disabled in this browser.
+
+### Fixed
+- Nano and local-model selection errors, unwanted changes to the saved default model, and sign-in when browser-level sign-in is disabled.
+
+---
+
+## [1.3.1] - August 2026
+
+### Added
+- **Support conversations.** Ask questions, report problems and receive replies on your account page. Attaching recent page errors is optional and requires your choice.
+- Notifications when support replies, with a direct link to the conversation.
+
+### Fixed
+- The extension panel opens on pages that overwrite the browser global `self`.
+- If the panel cannot load, the toolbar popup explains the failure and offers to report it.
+
+---
+
+## [1.3.0] - August 2026
+
+### Added
+- **Terminal control.** The `customaise` CLI lets agents with a shell open tabs, manage scripts and call AgentScript tools through the same bridge and approval controls. `customaise init` creates a project primer.
+- **Chat-friendly results.** Page context and console tools can return their results inline; screenshots can include the image. The Claude Desktop bundle uses inline output by default.
+- **Bridge diagnostics.** `get_bridge_status` reports connection, plan and quota information without consuming tool quota.
+
+### Improved
+- Updated MCP protocol negotiation and reusable tool lists, while retaining compatibility with older clients.
+- Tool descriptions distinguish reads and writes; failed screenshots report failure, and page reads can return inline when a workspace is unavailable.
+
+---
+
 ## [1.2.9] - August 2026
 
 ### Added
