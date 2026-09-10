@@ -1,6 +1,6 @@
 # Customaise Feedback
 
-This repo is the public hub for Customaise, the Chrome extension that lets you fix, customize, and automate any website with AI. UserScripts, AgentScripts for AI agents to call, and a real MCP server for your IDE.
+This repo is the public hub for Customaise, the Chrome extension that lets you fix, customize, and automate any website with AI. UserScripts, AgentScripts for AI agents to call, and an MCP server and CLI for AI agents.
 
 No code lives here. This is where you can:
 
