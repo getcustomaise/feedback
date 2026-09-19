@@ -2,9 +2,32 @@
 
 All notable changes to the Customaise Chrome extension are documented here.
 
+## [1.3.5] - Upcoming, September 2026
+
+Prepared for Chrome Web Store submission; not yet announced as available.
+
+### Improved
+- Faster switching between Settings, Script Management and Chat, with more responsive script toggles and the existing animations and frosted-glass appearance.
+- Larger script libraries do less rendering work. Chat retains your reading position while responses stream.
+- Gemini Nano now defaults to a 90-second generation limit. Choose up to four minutes in Settings → Local Models → Gemini Nano, and cancel earlier whenever needed.
+
+### Fixed
+- More reliable WebMCP permission decisions after page changes and bridge reconnects, with clearer refusal reasons.
+- Temporary account-verification failures no longer become a false Free subscription. When access cannot be verified, affected tool calls return an explicit retryable error without consuming Free quota. Confirmed plan changes still apply normally.
+- Sync conflict and preview dialogs use the same readable frosted glass as other popups.
+
+### Added
+- Per-tool Allow, Prompt and Deny choices now sync with encrypted scripts, including resets to the script default and restoration onto another browser. Update and complete sync on the browser holding your choices before removing its profile; previously discarded local-only choices cannot be recovered from older snapshots.
+
+### Companion update
+- Install **MCP/CLI 3.2.4** or the matching **Claude Desktop 3.2.4 bundle** alongside extension 1.3.5 for the complete fixes. The CLI is included in the MCP npm package. Restart MCP clients and any resident CLI daemon after updating.
+- This candidate includes the saving, sync and approval-cancellation improvements described under 1.3.4 below.
+
+---
+
 ## [1.3.4] - Upcoming, September 2026
 
-Chrome Web Store rollout pending. Version 1.3.3 is the current store release.
+Earlier September release candidate. Its changes are included in 1.3.5 above; confirm CWS rollout separately.
 
 ### Fixed
 - More reliable script saving and sync, including after browser restarts.
