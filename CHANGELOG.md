@@ -2,9 +2,57 @@
 
 All notable changes to the Customaise Chrome extension are documented here.
 
-## [1.3.5] - Upcoming, September 2026
+## [1.3.6] - Upcoming, September 2026
 
 Prepared for Chrome Web Store submission; not yet announced as available.
+Includes the changes previously prepared under 1.3.5 and 1.3.4.
+
+### Added
+
+- **Agent permissions.** Choose the default tool-permissions mode or enable
+  Full access to run eligible tools without repeated Customaise approvals in
+  this browser, including new and updated tools. Denied tools stay blocked,
+  saved tool rules are preserved, and Chrome DevTools access remains separate.
+  Full access is not synced and turns off when you sign out.
+- **Interactive bottom bar.** Manage agent permissions, DevTools, Agent Bridge
+  and sync in one place. Active features appear automatically. Appearance lets
+  you keep each control visible while it is off as well.
+- **AgentScript URL controls.** Quickly include or exclude sites, as with
+  UserScripts. URL choices are saved with the script and included in encrypted
+  sync when enabled.
+
+### Fixed
+
+- Approval recovery after interruptions and browser restarts, with pending
+  actions checked against the correct account, script and page.
+- Bridge and DevTools settings remain consistent during overlapping changes,
+  sign-out and delayed saves. Unavailable status is shown explicitly.
+- Permission confirmations remain centered and usable across panel sizes and
+  browser zoom. Failed loading releases the page, failed saving keeps its error
+  visible, and buttons reflect when an action can actually be accepted.
+
+### Improved
+
+- MCP Quick Setup folds away inside its own accordion.
+- Consistent access icons and colors: green enabled switches, orange elevated
+  access indicators, and yellow warnings for missing DevTools access.
+
+### Companion update
+
+- **MCP/CLI 3.2.5** and the matching **Claude Desktop 3.2.5 bundle** report the
+  connected browser's agent permission mode. MCP 3.2.4 remains compatible;
+  the 19-tool surface and bridge protocol are unchanged. The extension owns
+  approval enforcement, and MCP cannot enable Full access itself.
+- Restart MCP clients and any resident CLI daemon after updating.
+
+This release does not announce the unfinished Google Flow migration,
+verification of all marketplace integrations, or a hosted web-chat connector.
+
+---
+
+## [1.3.5] - Upcoming, September 2026
+
+Earlier release candidate. Its changes are included in 1.3.6 above; confirm CWS rollout separately.
 
 ### Improved
 - Faster switching between Settings, Script Management and Chat, with more responsive script toggles and the existing animations and frosted-glass appearance.
