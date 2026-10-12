@@ -2,10 +2,33 @@
 
 All notable changes to the Customaise Chrome extension are documented here.
 
-## [1.3.6] - Upcoming, September 2026
+## [1.3.7] - Upcoming, October 2026
 
-Prepared for Chrome Web Store submission; not yet announced as available.
-Includes the changes previously prepared under 1.3.5 and 1.3.4.
+Prepared for Chrome Web Store review; availability will be announced after approval.
+
+### Added
+
+- **Script Decisions.** Power Users can ask typed questions inside UserScripts and AgentScripts using Jev or Decisions API. Save separate provider keys, authorize a device and choose each script's provider in Quick Actions. Provider charges apply separately.
+- **Device and script controls.** See Script Decisions status on script cards and in the bottom bar, pause it on a device without losing provider choices, and review provider and device usage. Appearance controls which inactive features remain visible.
+- **Send an editable copy.** Share Script now offers a 24-hour link to an independent copy alongside Publish & share subscriptions. Power Users can send; free signed-in accounts can receive. Copies start disabled and keep their own edits and saved selectors. Refresh or stop the link from the source script.
+- **Agent setup prompts.** Copy a CLI setup prompt for your coding agent or a Grok Bot setup prompt for its computer. Quick Setup explains all 19 built-in MCP/CLI tools.
+
+### Improved
+
+- Compact sharing and sync status icons explain each script's state. Script actions retain their spacing and divider on the same row as the enable switch.
+- Learn pages and authoring guides explain Script Decisions metadata, bounded requests, provider setup and practical use cases, plus how sharing handles independent copies and subscriptions.
+
+### Companion update
+
+- **MCP/CLI 3.2.6** and the matching **Claude Desktop 3.2.6 bundle** include the Script Decisions authoring reference and updated UserScript/AgentScript sharing guidance. The 19-tool surface is unchanged; agents cannot select a paid provider or authorize a device.
+- Restart MCP clients and resident CLI daemons after updating.
+
+---
+
+## [1.3.6] - Released
+
+Available in the Chrome Web Store. Includes the changes previously prepared
+under 1.3.5 and 1.3.4.
 
 ### Added
 
