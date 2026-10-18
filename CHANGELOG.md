@@ -2,9 +2,41 @@
 
 All notable changes to the Customaise Chrome extension are documented here.
 
-## [1.3.7] - Upcoming, October 2026
+## [1.3.8] - Upcoming, October 2026
 
 Prepared for Chrome Web Store review; availability will be announced after approval.
+
+### Changed
+
+- **Script Decisions follow the Decisions API.** Call `CM_decisions.create` or `createMany` with the questions written out in your script. With Jev selected, Customaise translates the questions and answers. The `@decisions` header from 1.3.7 is no longer read.
+- **Decisions menu.** The branch icon beside a script opens its Decisions menu: choose the provider, switch each question set On or Off, and see today's decisions and any problems in the code.
+
+### Added
+
+- **Daily limits for each browser.** Set a daily alert and a daily stop limit on your account page. A browser marked Operated by an AI agent needs another device to switch Script Decisions on or loosen its limits.
+- **Loop guard.** A script that keeps sending the same text pauses, and its Decisions menu shows why, with Resume.
+- The Customaise AI editor knows `CM_decisions`, so it can add Script Decisions to a script when you ask.
+
+### Improved
+
+- Each batch of rows goes in one request, so large runs finish faster.
+
+### Fixed
+
+- You stay signed in when Chrome or the extension restarts. Since 1.2.5, a restart more than an hour after signing in could show you as signed out.
+- On pages that also run a UserScript, Full access, approval requests, highlighted captures and the unsaved-changes panel work on every page load.
+- AgentScript tools on a page reloaded after a browser restart are no longer refused as out of date.
+
+### Companion update
+
+- **MCP/CLI 3.2.7** and the matching **Claude Desktop 3.2.7 bundle** carry the rewritten Script Decisions guide. The 19-tool surface is unchanged.
+- Restart MCP clients and resident CLI daemons after updating.
+
+---
+
+## [1.3.7] - Released
+
+Available in the Chrome Web Store since 13 October 2026. Script Decisions as described here is replaced in 1.3.8.
 
 ### Added
 
@@ -16,11 +48,11 @@ Prepared for Chrome Web Store review; availability will be announced after appro
 ### Improved
 
 - Compact sharing and sync status icons explain each script's state. Script actions retain their spacing and divider on the same row as the enable switch.
-- Learn pages and authoring guides explain Script Decisions metadata, bounded requests, provider setup and practical use cases, plus how sharing handles independent copies and subscriptions.
+- Learn pages and script guides explain Script Decisions metadata, bounded requests, provider setup and practical use cases, plus how sharing handles independent copies and subscriptions.
 
 ### Companion update
 
-- **MCP/CLI 3.2.6** and the matching **Claude Desktop 3.2.6 bundle** include the Script Decisions authoring reference and updated UserScript/AgentScript sharing guidance. The 19-tool surface is unchanged; agents cannot select a paid provider or authorize a device.
+- **MCP/CLI 3.2.6** and the matching **Claude Desktop 3.2.6 bundle** include the Script Decisions reference and updated UserScript/AgentScript sharing guidance. The 19-tool surface is unchanged; agents cannot select a paid provider or authorize a device.
 - Restart MCP clients and resident CLI daemons after updating.
 
 ---
