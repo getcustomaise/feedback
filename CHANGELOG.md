@@ -4,7 +4,7 @@ All notable changes to the Customaise Chrome extension are documented here.
 
 ## [1.3.9] - Upcoming, October 2026
 
-Prepared for Chrome Web Store review; availability will be announced after approval.
+Submitted to the Chrome Web Store on 28 October 2026; availability will be announced after approval.
 
 ### Changed
 
@@ -38,6 +38,7 @@ Prepared for Chrome Web Store review; availability will be announced after appro
 
 - Script headers rewritten by 1.3.7 or 1.3.8 are restored on update.
 - Switches that are on stay green under the pointer.
+- Data & Analytics shows Script Decisions usage together with your account figures instead of on its own while they load.
 
 ### Companion update
 
