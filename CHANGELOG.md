@@ -2,9 +2,53 @@
 
 All notable changes to the Customaise Chrome extension are documented here.
 
-## [1.3.8] - Upcoming, October 2026
+## [1.3.9] - Upcoming, October 2026
 
 Prepared for Chrome Web Store review; availability will be announced after approval.
+
+### Changed
+
+- Requires Chrome 147 or later, matching the tested release baseline. Older Chrome versions are outside this release's support range.
+- Turning on DevTools access or the Agent Bridge, and allowing or resetting a tool, now confirm in the same protected dialog as Full access. Turning them off and denying a tool still apply at once.
+- Editing a script pauses its automatic updates; updating it by hand asks first.
+- Private windows: scripts work on a copy of their saved values that ends with the session, and their downloads stay out of the normal history.
+- Adds webRequest, webRequestAuthProvider and declarativeNetRequestWithHostAccess, used only on requests Customaise sends for a user's script. Chrome shows no new permission warning.
+
+### Added
+
+- Discovery onboarding separates UserScripts for you from AgentScripts for your agent, with interactive examples, recommendations and live browser setup checks.
+- Playground offers six sample websites and prompts for creating and testing scripts. Its separate Connection check helps finish extension, permission, sign-in and agent setup without repeating onboarding. The extension's unavailable-page popup opens Playground.
+- Eligible accounts can explicitly activate three days of Power User after onboarding, with a separate one-time return offer. The trials add no tokens and never overlap or stack; previously issued credits keep their original terms.
+- Script commands: the commands a script registers run from its Quick Actions → Script commands, where access keys work as shortcuts, and from Chrome's right-click menu.
+- Blocked pages, Allowed pages and Blocked sources in Settings → Scripts. Blocked pages starts with payment and banking pages (PayPal, Stripe, Deutsche Bank 24, Bank of America) and a few embedded widgets, so a script that ran there stays off until its entry is removed; Blocked sources starts with example.com. AgentScripts are not affected.
+- Network permissions: a script that lists no sites asks before reaching a new one, a script that lists sites is refused for any other, and a download from a site the script did not list asks; saved choices are in Quick Actions → Network permissions.
+- Manual Restore (Settings → Scripts) imports zip and JSON backups with each script's saved values and the backup's settings, including blocked and allowed pages and script options.
+- Script options in Settings → Scripts → Advanced: @connect checks, @include matching, sandbox mode, cookie and local file access, header changes and Subresource Integrity.
+- GM_xmlhttpRequest answers a server's sign-in challenge with the script's own credentials and shows Set-Cookie headers (HttpOnly ones only with GM_cookie).
+- @run-at document-body, and @run-at context-menu for scripts run from Chrome's right-click menu. GM_audio for the tab's audio.
+
+### Improved
+
+- A script asking for an API Customaise does not provide, such as GM_webRequest, installs and runs, and its card names what it runs without.
+- The setup alert directs users to Allow user scripts in Customaise's Chrome extension Details.
+- IPv6 @connect hosts, including explicit ports, and compressed/large GM_xmlhttpRequest responses. Large bodies finish in order; transfer failures report an error instead of returning truncated success.
+- Startup and response-transfer improvements, with saved-value recovery across navigation and worker restarts.
+
+### Fixed
+
+- Script headers rewritten by 1.3.7 or 1.3.8 are restored on update.
+- Switches that are on stay green under the pointer.
+
+### Companion update
+
+- **MCP/CLI 3.2.8** and the matching **Claude Desktop 3.2.8 bundle** carry the complete 1.3.9 UserScript reference, migration checks, API-specific return values and known browser limits. The 19-tool surface is unchanged.
+- Restart MCP clients and resident CLI daemons after updating.
+
+---
+
+## [1.3.8] - Released
+
+Available in the Chrome Web Store; confirmed live on 25 October 2026.
 
 ### Changed
 
