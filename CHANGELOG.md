@@ -150,7 +150,7 @@ verification of all marketplace integrations, or a hosted web-chat connector.
 
 ---
 
-## [1.3.5] - Upcoming, September 2026
+## [1.3.5] - Released
 
 Earlier release candidate. Its changes are included in 1.3.6 above; confirm CWS rollout separately.
 
@@ -173,7 +173,7 @@ Earlier release candidate. Its changes are included in 1.3.6 above; confirm CWS 
 
 ---
 
-## [1.3.4] - Upcoming, September 2026
+## [1.3.4] - Released
 
 Earlier September release candidate. Its changes are included in 1.3.5 above; confirm CWS rollout separately.
 

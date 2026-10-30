@@ -9,6 +9,8 @@ No code lives here. This is where you can:
 - **Read the changelog** at [CHANGELOG.md](./CHANGELOG.md)
 - **Join discussions** in the [Discussions tab](https://github.com/getcustomaise/feedback/discussions)
 
+Signed in? You can also open a private support conversation from your [Account page](https://customaise.com/account?support=new).
+
 ## Links
 
 - [customaise.com](https://customaise.com)
