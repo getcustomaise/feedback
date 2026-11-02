@@ -2,6 +2,42 @@
 
 All notable changes to the Customaise Chrome extension are documented here.
 
+## [1.4.0] - Released
+
+Available in the Chrome Web Store since 2 November 2026.
+
+### Added
+
+- AgentScripts can register tools on document.modelContext, the WebMCP standard name. When Chrome’s own WebMCP is turned on, Customaise works alongside it and your tool approvals still apply.
+- Script Decisions: when a provider stops serving a model, the Decisions menu says so, and scripts on Automatic move to a newer one with no change.
+- Full access can now include Script Decisions. Turn it on in Settings → Agent permissions, and your agents choose each script’s provider, switch its question lists and keep the provider when they change the script, without waiting for you.
+
+### Improved
+
+- Script Decisions sends up to 1,600 inputs at a time and waits up to five minutes for answers, answers repeated text from the last 24 hours for free, takes images and JSON as inputs, finds things in images with Jev’s Box questions, and lets you hold a Jev version for a script.
+- Script Decisions has one daily limit per browser, set under Your Devices on your account page beside today’s count. It no longer sends usage alerts; set spending limits in your provider’s console.
+- AgentScripts and context-menu scripts now keep their saved values and their @grant APIs in a protected space the page can’t reach.
+- Restoring a backup imports every script. Options Customaise doesn’t use stay with the script, and the import dialog lists them. Large imports are faster, and an interrupted import tells you to import the same file again.
+- @connect is read strictly: example.com covers its subdomains on any port, while *.example.com, a port, a whole URL or a pattern matches nothing. A script that relied on a wider reading now asks, or is refused.
+
+### Fixed
+
+- On http pages served from a LAN server, an intranet name or an IP address, copying from the panel and the Toolbox works, the panel logo shows, and voice input says why the microphone is off.
+- A download asked to overwrite a file is saved as a numbered copy instead.
+- @match, @include and @exclude patterns that differ only in letter case are all kept.
+- Your scripts and AgentScripts now run on pages Chrome loads before you open them, such as an address it predicts as you type. They used to start only after a reload.
+- The toolbar button opens and closes the panel every time, also when a page changes its address without reloading, an embedded frame loads, or Customaise has been idle.
+- Page Tools keep a page’s WebMCP tools when you go Back to it and when Customaise has been idle, and a tool the page removes leaves the list.
+
+### Companion update
+
+- **MCP/CLI 3.2.9** and the matching **Claude Desktop 3.2.9 bundle** add agent tools for reading and changing Script Decisions when the person enables that access. The server now exposes 21 tools.
+- Updated scripting handbooks cover the WebMCP standard name, plain HTTP pages, network permissions and the full Script Decisions API.
+- Large WebMCP results can be saved to a file, and CLI output is written in full before the process exits.
+- Restart MCP clients and resident CLI daemons after updating.
+
+---
+
 ## [1.3.9] - Released
 
 Available in the Chrome Web Store since 30 October 2026.
