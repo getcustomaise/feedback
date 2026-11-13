@@ -2,6 +2,31 @@
 
 All notable changes to the Customaise Chrome extension are documented here.
 
+## [1.4.1] - Upcoming, November 2026
+
+Going to the Chrome Web Store for review; availability will be announced after approval.
+
+### Improved
+
+- The panel opens faster, and pages stay smooth while it’s open.
+- Agents ask before they install or subscribe to a marketplace listing for you, unless you’ve given them Full access in Settings → Agent permissions.
+- For agents: reloading a tab waits until its tools are back, a mistyped tool name fails in seconds and lists the tab’s tools, and page reads say when a tab needs reloading.
+- Voice input says when a site doesn’t let the panel use the microphone.
+- Security improvements.
+
+### Fixed
+
+- Scripts that load very large @require or @resource files no longer stall.
+- More reliable saved values, downloads and notifications for scripts.
+- The script editor no longer reports its suggestions and notes as errors.
+
+### Companion update
+
+- **MCP/CLI 3.3.0** and the matching **Claude Desktop 3.3.0 bundle** carry the updated handbooks your coding agent reads: how to mark a tool whose result carries text other people wrote, and the token details a Script Decision reports. The 21-tool surface is unchanged.
+- Restart MCP clients and resident CLI daemons after updating.
+
+---
+
 ## [1.4.0] - Released
 
 Available in the Chrome Web Store since 2 November 2026.
