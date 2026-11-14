@@ -11,8 +11,8 @@ A clear description of what the bug is.
 
 **Environment**
 - Chrome version: [e.g. 149, from chrome://version]
-- Customaise version: [e.g. 1.3.9, in extension Settings]
-- MCP/CLI version, if an agent was involved: [e.g. 3.2.8, from `customaise --version`]
+- Customaise version: [e.g. 1.4.1, in extension Settings]
+- MCP/CLI version, if an agent was involved: [e.g. 3.3.0, from `customaise --version`]
 - OS: [e.g. macOS 15, Windows 11]
 
 **Steps to reproduce**
