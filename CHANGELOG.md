@@ -2,9 +2,9 @@
 
 All notable changes to the Customaise Chrome extension are documented here.
 
-## [1.4.1] - Upcoming, November 2026
+## [1.4.1] - Released
 
-Going to the Chrome Web Store for review; availability will be announced after approval.
+Available in the Chrome Web Store since 14 November 2026.
 
 ### Improved
 
