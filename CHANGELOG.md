@@ -2,6 +2,28 @@
 
 All notable changes to the Customaise Chrome extension are documented here.
 
+## [1.5.0] - Released
+
+Available in the Chrome Web Store since 18 November 2026.
+
+### Added
+
+- Script Decisions adds a third provider: Gemini Decisions API by Google. Save its key on your account page, then choose it in a script’s Decisions menu.
+- With Gemini Decisions API, a script can ask about audio, video and PDF documents as well as text and images, with up to 1,000 questions in one list and scores of up to 255 levels.
+
+### Improved
+
+- A script can use a provider that answers only some of its question lists. The lists it can’t answer stay Off in the Decisions menu, and the rest run.
+- OpenAI’s provider now shows its full name, OpenAI Decisions API. Your scripts and saved keys are unchanged.
+- For agents: get_script_decisions lists which providers can answer each script.
+
+### Companion update
+
+- **MCP/CLI 3.4.0** and the matching **Claude Desktop 3.4.0 bundle** carry the Script Decisions guide your coding agent reads, which now compares Jev, the OpenAI Decisions API and the Gemini Decisions API. The 21-tool surface is unchanged.
+- Restart MCP clients and resident CLI daemons after updating.
+
+---
+
 ## [1.4.1] - Released
 
 Available in the Chrome Web Store since 14 November 2026.
