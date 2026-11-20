@@ -2,6 +2,29 @@
 
 All notable changes to the Customaise Chrome extension are documented here.
 
+## [1.5.1] - Released
+
+Available in the Chrome Web Store since 20 November 2026.
+
+### Added
+
+- A script’s Quick Actions has Clear saved data. It removes the values the script has saved, such as its settings, after telling you how many there are.
+
+### Fixed
+
+- The panel keeps its frosted glass while a tooltip or a menu is open. Since 1.4.1, hovering a button could turn the whole panel dark and see-through.
+- The panel’s shadow and corners draw cleanly on light pages, at every zoom level and while you drag it.
+- The panel stays inside the window when it grows near an edge, and it can no longer be dragged past the bottom.
+- With your browser set to dark, the panel no longer sits on a white rectangle on pages that support both light and dark, such as GitHub.
+- Deleting a script no longer asks your other devices to settle a conflict over its saved values. With Sync Data off, a script’s values stay on the device that holds them.
+- After Chrome closes Customaise’s storage, as it does when a disk fills up, saved values, script libraries and Script Decisions recover by themselves. They used to stay stuck until a restart.
+
+### Companion update
+
+- None. MCP/CLI 3.4.0 and its Claude Desktop bundle stay current.
+
+---
+
 ## [1.5.0] - Released
 
 Available in the Chrome Web Store since 18 November 2026.
