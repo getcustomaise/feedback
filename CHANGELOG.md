@@ -2,6 +2,36 @@
 
 All notable changes to the Customaise Chrome extension are documented here.
 
+## [1.6.0] - Released
+
+Available in the Chrome Web Store since 24 November 2026.
+
+### Added
+
+- Script Remotes: a script can make a remote for your phone, a page of its own whose buttons work the signed-in tab on your computer. Your AI agent gives you the link. Needs Power User with Remote HITL Approvals on.
+- A remote keeps one link. When your agent changes the script, the remote you have open updates by itself, and a script can have several, one for each part of its job.
+- Your account page lists every remote under Your Devices, in the browser it acts in, and a script’s Quick Actions lists its remotes with their links. A remote lasts until you end it, its script is deleted, or 30 days after it was last used.
+- When a tool the remote calls needs your approval, you give it on the remote, by the same rules as everywhere else.
+- From a remote you can hand something to your agent, such as the items you picked, and it carries on from there.
+
+### Improved
+
+- An approval you give on your phone or your account page reaches your browser in about a second. It used to take up to 20 seconds.
+- Loading screens and the sign-in screen show the Customaise logo in glass, and the small spinners on buttons share one style.
+- Chrome’s extensions page no longer lists ordinary states, such as being signed out, as Customaise errors.
+- For agents: installing a script whose name is already taken names the installed script and says how to update it.
+
+### Fixed
+
+- On your account page, an approval you gave from another device no longer shows as failed when its tool ran.
+- Sync starts even when Customaise is still saving scripts as Chrome opens. On some browsers it did not start at all.
+
+### Companion update
+
+- **MCP/CLI 3.6.0** and the matching **Claude Desktop 3.6.0 bundle** carry the Script Remotes guide your coding agent reads and its three inbox tools. The tool surface grows from 21 to 26.
+
+---
+
 ## [1.5.1] - Released
 
 Available in the Chrome Web Store since 20 November 2026.
