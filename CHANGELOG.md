@@ -2,6 +2,33 @@
 
 All notable changes to the Customaise Chrome extension are documented here.
 
+## [1.6.1] - Released
+
+Available in the Chrome Web Store since 26 November 2026.
+
+### Added
+
+- With no chats yet, AI Chat opens on two cards: Agent Bridge, for the AI agent you already use, and In-browser Chat. Each card says what it runs on.
+- Agent Bridge walks you through connecting your agent. Pick Claude, ChatGPT, Grok Bot or any agent, copy one prompt and paste it to your agent. The card watches for it, tells you when it is connected and lists each call it makes.
+- When you ask Chat for a change that needs code, its reply has a “Build this as a UserScript” button. It switches the conversation and sends your request again.
+
+### Improved
+
+- An agent that can run commands connects in the conversation you are in, with no restart. It also sets up its MCP server for the next time it starts.
+- Settings shows the same steps under Agent Bridge, in place of Quick Setup.
+- A conversation switches between Chat and UserScript at any point. The mode used to lock after the first message.
+
+### Fixed
+
+- The setup command Customaise gives your agent starts the MCP server on a new install. The short npx command did not.
+- Commands in the panel show two hyphens as typed. They were drawn as one dash.
+
+### Companion update
+
+- **MCP/CLI 3.6.1** and the matching **Claude Desktop 3.6.1 bundle**: `npx -y @customaise/mcp` starts the MCP server again, and `customaise doctor` waits for the extension on a first run. No tool or resource changes.
+
+---
+
 ## [1.6.0] - Released
 
 Available in the Chrome Web Store since 24 November 2026.
